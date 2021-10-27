@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13rem;
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) ,
+                0px 4px 6px -2px rgba(0,0,0,0.05) ;
+    z-index: 9;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background: none;
+    border: 1px solid  rgba(28, 35, 115, 1);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1) ,
+                0px 4px 6px -2px rgba(0,0,0,0.05) ;
+}
+
+.logo, .nav-links, .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-lg{
+    width: 40px;
+    height: 40px;
+    background-image: url('./Assets/logo\ 1.png');
+    background-size: cover;
+}
+
+.name-lg{
+    color: rgba(28, 35, 115, 1);
+    font-weight: bold;
+}
+
+.links{
+    list-style: none;
+}
+
+.links li{
+    padding-right: 1rem;
+}
+
+.signin-btn{
+    /* background-color: rgba(28, 35, 115, 1);rgba(101, 61, 185, 1) */
+    background-image: linear-gradient(45deg, rgba(28, 35, 115, 1), rgba(101, 61, 185, 1));
+    color: white;
+    border: none;
+}
+
+.hero-section{
+    /* margin-top: 8vh; */
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13rem;
+    position: relative;
+}
+
+.hero-content, .hero-img{
+    width: 100%;
+    height: 100%;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+.para{
+    max-width: 40ch;
+    color: rgba(28, 35, 115, 1);
+    margin:  1.5rem 0;
+    font-size: 1.6rem;
+}
+
+.book-now{
+    background-image: linear-gradient(45deg, rgba(28, 35, 115, 1), rgba(101, 61, 185, 1));
+    color: white;  
+}
+
+.help{
+    color: rgba(28, 35, 115, 1);
+}
+
+.hero-img{
+    /* background-color: rgb(163, 25, 163); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./Assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40%;
+}
+
+/* .background-hero{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('./Assets/hero-bg.png') ;
+} */
+
+.blog-section{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 13rem;
+}
+
+.background-blog{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 60vh;
+    left: 0;
+    background-image: url('./Assets/blog-bg.png');
+    background-repeat: no-repeat;
+}
+
+.blog-section h4{
+    color: rgba(28, 35, 115, 1);
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+}
+
+.blog-post-container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-card{
+    width: 250px;
+    height: 290px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow:0px 4px 6px 0px rgba(50, 50, 93, 0.144) , 
+                0px 1px 3px 0px rgba(0, 0, 0, 0.123) 
+}
+
+.img{
+    width: 100%;
+    height: 70%;
+    background-image: url('./Assets/blog-card-img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog-card h5{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem;
+}
+
+.blog-card p{
+    font-size: .8rem;
+    color: rgb(68, 68, 68);
+    padding: 0 .5rem .5rem .5rem;
+}
+
+.blog-card:nth-child(odd){
+    margin-top: auto;
+}
+
+.blog-section button{
+    margin-top: 2.5rem;
+    background-image: linear-gradient(45deg, rgba(28, 35, 115, 1), rgba(101, 61, 185, 1));
+    color: white;
+    padding: .5rem 1.8rem;
+}
+
+.team-section{
+    width: 100%;
+    height: auto;
+    padding: 3rem 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-section h4{
+    color: rgba(28, 35, 115, 1);
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+}
+
+.team-bg{
+    position: absolute;
+    height: 100%;
+    width: 130px;
+    top: 130vh;
+    right: 0;
+    background-image: url('./Assets/team-bg.png');
+    background-repeat: no-repeat;
+}
+
+.h-scroll-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.emp-card{
+    margin: 2rem 2.5rem 2rem 0;
+    text-align: center;
+}
+
+.emp-card h5{
+    margin-top :1rem;
+    
+}
+
+.emp-card p{
+    margin-top :.25rem;
+    font-size: .9rem;
+}
+
+.emp-img{
+    width: 170px;
+    height: 170px;
+    background-image: url('./Assets/profile.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-section{
+    width: 100%;
+    padding: 2rem 13rem;
+    border-top: 1px solid rgb(200, 204, 247);
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    color: rgba(28, 35, 115, 0.719);
+x
+}
+
+.logo-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-col p{
+    width: 30ch;
+    font-size: small;
+}
+
+.lg-footer{
+    width: 70px;
+    height: 70px;
+    background-image: url('./Assets/bus\ \(1\)\ 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.links-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.links-col ul{
+    list-style: none;
+    padding: 0 2rem;
+    margin-bottom: .15rem;
+}
+
+.links-col ul li{
+    font-size: small;
+}
+
+footer h4{
+    color: rgba(28, 35, 115, 1);
+    margin-bottom: .5rem;
+}
+
+.social-col{
+    text-align: end;
+}
+
+.fa-lg{
+    color: rgba(28, 35, 115, 1);
+    padding-left: .5rem;
+    padding-top: 1rem;
+}
